@@ -27,11 +27,10 @@ def can_be_created_in_a_block(args = {title: 'Home Alone'} )
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
-
-  Movie.create(args) do |m|
-    m.title = 'The Room'
-    m.release_date = 2003
-  end
+  Movie.create(args) #do |m|
+  #   m.title = 'The Room'
+  #   m.release_date = 2003
+  # end
 end
 
 def can_get_the_first_item_in_the_database
